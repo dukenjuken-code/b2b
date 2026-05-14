@@ -50,7 +50,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <a href="tel:+375172680000" className="flex items-center gap-1 hover:text-white transition-colors">
               <Phone size={12} />
-              +375 17 268-00-00
+              +375 00 000-00-00
             </a>
             <span className="text-white/30">|</span>
             <Link to="/b2b/login" className="hover:text-white transition-colors">Вход для партнёров</Link>
