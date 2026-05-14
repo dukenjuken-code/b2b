@@ -21,7 +21,7 @@ export function ContactsPage() {
             {
               icon: <Phone size={20} className="text-blue-500" />,
               title: 'Телефон',
-              lines: ['+375 17 268-00-00', '+375 29 000-00-00'],
+              lines: ['+375 00 000-00-00', '+375 29 000-00-00'],
             },
             {
               icon: <Mail size={20} className="text-blue-500" />,
