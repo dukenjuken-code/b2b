@@ -411,47 +411,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── INDUSTRIES ─── */}
-      <section className="bg-slate-50 py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <Badge variant="blue" className="mb-4">Отраслевые решения</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Решения по отраслям
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredIndustries.map((industry) => (
-              <Link
-                key={industry.id}
-                to={`/industries/${industry.slug}`}
-                className="group bg-white rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow-xl overflow-hidden transition-all duration-300"
-              >
-                <div className={`h-2 bg-gradient-to-r ${industry.gradient}`} />
-                <div className="p-6">
-                  <div className="text-4xl mb-4">{industry.icon}</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                    {industry.name}
-                  </h3>
-                  <p className="text-slate-500 text-sm mb-4">{industry.fullDescription}</p>
-                  <div className="space-y-1 mb-4">
-                    {industry.challenges.slice(0, 2).map((c, i) => (
-                      <div key={i} className="flex items-start gap-2 text-xs text-slate-500">
-                        <CheckCircle size={12} className="text-emerald-500 mt-0.5 shrink-0" />
-                        {c}
-                      </div>
-                    ))}
-                  </div>
-                  <span className="flex items-center gap-1 text-sm font-semibold text-blue-600 group-hover:gap-2 transition-all">
-                    Смотреть решения <ChevronRight size={14} />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ─── FAQ ─── */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-4">
