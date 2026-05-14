@@ -28,26 +28,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Catalog */}
-          <div>
-            <div className="text-xs font-semibold text-white/40 uppercase tracking-wider mb-4">
-              Каталог
-            </div>
-            <ul className="space-y-2">
-              {categories.map((cat) => (
-                <li key={cat.id}>
-                  <Link
-                    to={`/catalog/${cat.slug}`}
-                    className="flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors"
-                  >
-                    <span className="text-base">{cat.icon}</span>
-                    {cat.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Company */}
           <div>
             <div className="text-xs font-semibold text-white/40 uppercase tracking-wider mb-4">
