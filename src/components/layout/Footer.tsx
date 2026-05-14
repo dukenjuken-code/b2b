@@ -86,7 +86,7 @@ export default function Footer() {
                   className="flex items-start gap-3 text-sm text-white/60 hover:text-white transition-colors"
                 >
                   <Phone size={15} className="mt-0.5 shrink-0 text-blue-400" />
-                  +375 17 268-00-00
+                  +375 00 000-00-00
                 </a>
               </li>
               <li>
